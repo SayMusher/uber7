@@ -1,0 +1,230 @@
+* {
+    font-family: "Roboto";
+}
+
+nav {
+    background-color: #212121;
+    height: 50px;
+}
+
+.menu {
+    padding: 13px 70px;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.menu_link {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu .menu_item {
+    border-right: 2px black dotted;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 1949px;
+    height: 84px;
+
+    z-index: 5;
+}
+
+.subheader_logo {
+    max-width: 100%;
+
+    display: block;
+    margin-top: 16px;
+}
+
+.subheader_official {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.502);
+
+    margin-top: 6px;
+}
+
+.subheader_tel {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-weight: 300;
+    line-height: 21px;
+
+    padding-top: 17px;
+}
+
+.subheader_tel_number {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.subheader_btn {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21);
+    font-weight: 300;
+    border: none;
+    border-radius: 4px;
+
+    width: 182px;
+    height: 46px;
+    background: rgb(35, 178, 205);
+    background: linear-gradient(
+        0deg,
+        rgba(35, 178, 205, 1) 0%,
+        rgba(76, 226, 255, 1) 100%
+    );
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+
+    margin-top: 19px;
+}
+
+.promo {
+    min-height: 750px;
+
+    padding-top: 150px;
+
+    background-image: url(../img/promo_bg.jpg);
+    transform: translateY(-84px);
+
+    z-index: 1;
+}
+
+.promo_header {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.promo_subheader {
+    margin-top: 16px;
+
+    line-height: 36px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.promo_text {
+    margin-top: 16px;
+    padding: 0 60px;
+
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-align: center;
+    font-weight: 300;
+}
+
+.promo_btn {
+    display: block;
+
+    width: 269px;
+    height: 73px;
+
+    margin: 118px auto 0 auto;
+
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 3.778;
+    text-align: center;
+    text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21);
+    font-weight: 300;
+
+    border: none;
+    border-radius: 4px;
+
+    background: rgb(35, 178, 205);
+    background: linear-gradient(
+        0deg,
+        rgba(35, 178, 205, 1) 0%,
+        rgba(76, 226, 255, 1) 100%
+    );
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section_icon {
+    padding-top: 5px;
+    margin: 15px auto 36px auto;
+
+    background-color: rgb(0, 0, 0);
+    width: 112px;
+    height: 24px;
+
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+
+.section_title {
+    font-size: 38px;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.advantages_item {
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+.advantages_item_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 26px;
+
+    background-color: #409db4;
+    border-radius: 50%;
+
+    width: 115px;
+    height: 115px;
+}
+
+.advantages_item_text {
+    max-width: 390px;
+    /* max-height: 140px; */
+    text-align: justify;
+
+    font-size: 15px;
+    color: #202020;
+    line-height: 1.235;
+    font-weight: 300;
+}
+
+.advantages_item_title {
+    color: rgb(30, 172, 199);
+    font-size: 17px;
+    font-weight: 400;
+}
