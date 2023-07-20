@@ -14,4 +14,19 @@ window.addEventListener("DOMContentLoaded", () => {
             menu.classList.toggle("menu_active");
         });
     });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                // entry.target.classList.remove("noshow");
+            } else {
+                entry.target.classList.remove("show");
+                // entry.target.classList.add("noshow");
+            }
+        });
+    });
+
+    const hiddenItems = document.querySelectorAll(".hidden");
+    hiddenItems.forEach((el) => observer.observe(el));
 });
