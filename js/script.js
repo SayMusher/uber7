@@ -18,11 +18,11 @@ window.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-                // entry.target.classList.remove("noshow");
+                setTimeout(() => {
+                    entry.target.classList.add("show");
+                }, 200);
             } else {
                 entry.target.classList.remove("show");
-                // entry.target.classList.add("noshow");
             }
         });
     });
